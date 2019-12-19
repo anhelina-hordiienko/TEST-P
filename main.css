@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    min-height: 130px;
+    width: 100%;
+    position: absolute;
+    padding: 0 6.33%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #FEFEFE;
+    text-transform: uppercase;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    flex-basis: auto;
+    flex-wrap: wrap;
+}
+ul {
+    list-style: none;
+}
+.nav li {
+    margin: 0 20px;
+}
+a {
+    text-decoration: none;
+}
+.nav a {
+    color: #FEFEFE;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    content: '';
+    border-width: 6px 4px 0 4px;
+    border-color: #FEFEFE transparent transparent transparent;
+    border-style: solid;
+    margin-left: 5px;
+    vertical-align: 1px;
+}
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+.button-group .button:first-of-type {
+    margin-right: 20px;
+}
+.button {
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.button_ellipse {
+    border-radius: 60px;
+    min-width: 213px;
+    min-height: 60px;
+}
+.button_ellipse img {
+    margin-right: 10px;
+}
+.button_round {
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 50%;
+}
+.button_white {
+    background-color: #FEFEFE;
+    color: #444444;
+}
+.button_green {
+    background-color: #88BA61;
+    color: #FEFEFE;
+}
+.button-content {
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    min-height: 900px;
+    padding: 0 13.73% 0 6.33%;
+    padding-top: 130px;
+    background-image: url(./img/banner.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.125rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+}
+p:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+}
+.banner .text-content {
+    color: #FEFEFE;
+    max-width: 563px;
+    min-width: 293px;
+    margin-right: 50px;
+}
+.arrivals-wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.arrivals {
+    width: 446px;
+    height: 572px;
+    background-color: #FEFEFE;
+    border-radius: 60px;
+}
+
+.wave{
+    position: relative;
+  }
+  .wave::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle at 10px -5px, transparent 12px, #F4F6F7 13px);
+  }
+  .wave::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image: radial-gradient(circle at 10px 15px, #F4F6F7 12px, transparent 13px);
+  }
+
+.try {
+    padding-top: 8.2%;
+    background-color: #F4F6F7;
+    color: #444444;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.try .text-content{
+    margin-bottom: 2%;
+    width: 43%;
+    padding-left: 15%;
+}
+.try .try-image-wrapper {
+    width: 49%;
+}
+.try img {
+    border-top-left-radius: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.benefits {
+    background-color: #202A35;
+    padding: 9.8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.benefits-column {
+    width: 329px;
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefits-column p {
+    text-align: center;
+    color: #A8A8A8;
+}
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.benefits-column h3 {
+    color: #88BA61;
+    margin: 1.75rem 0;
+    text-align: center;
+}
+
+.ordering {
+    background-image: url(./img/Cannabidioil.png);
+    background-size: cover;
+    padding: 4.37% 13.73% 5.75% 0;
+    display: flex;
+    justify-content: flex-end;
+    color: #444444;
+}
+.ordering .text-content {
+    background-color: #FEFEFE;
+    padding: 83px 51px 83px 65px;
+    max-width: 563px;
+    border-radius: 60px;
+}
+
+.footer-info {
+    background-color: #F4F6F7;
+    padding: 6.01% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-info h3 {
+    margin: 1.25rem 0;
+}
+.footer-column {
+    margin: 0 3%;
+}
+.footer-column * {
+    color: #444444;
+    line-height: 1.5rem;
+}
+address {
+    font-style: normal;
+}
+.copyright {
+    padding: 2.75rem 3%;
+    background-color: #FFFFFF;
+    color: #A8A8A8;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1330px) {
+    .try .text-content{
+        padding-left: 6.33%;
+    }
+}
+@media only screen and (max-width: 1015px) {
+    .banner {
+        flex-wrap: wrap;
+        padding-right: 6.33%;
+    }
+    .arrivals-wrapper {
+        justify-content: flex-start;
+    }
+    .try .text-content{
+        width: 100%;
+        padding-right: 6.33%;
+    }
+    .try .try-image-wrapper {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 710px) {
+    .nav li {
+        width: 100%;
+    }
+    header .button {
+        margin: 5px 0;
+    }
+    .banner {
+        padding-top: 285px;
+    }
+    .ordering {
+        padding-right: 0;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 512px) {
+    .arrivals {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .ordering .text-content {
+        width: 100%;
+    }
+    .footer-column {
+        width: 100%;
+    }
+    .footer-info {
+        justify-content: flex-start;
+    }
+}
