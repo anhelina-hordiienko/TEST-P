@@ -148,6 +148,9 @@ p:not(:last-of-type) {
     height: 572px;
     background-color: #FEFEFE;
     border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .info {
