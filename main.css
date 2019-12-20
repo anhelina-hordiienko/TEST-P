@@ -9,8 +9,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    /*font-family: 'Source Sans Pro', sans-serif;*/
     font-family: 'Roboto', sans-serif;
+}
+a {
+    cursor: pointer;
 }
 header {
     min-height: 130px;
@@ -148,6 +150,56 @@ p:not(:last-of-type) {
     border-radius: 60px;
 }
 
+.info {
+    padding: 8.2% 0;
+    background-color: #FFFFFF;
+    color: #444444;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.info img {
+    display: block;
+}
+.info-image-wrapper {
+    width: 43%;
+    display: grid;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 61% 37%;
+    grid-template-rows: 49% 49%;
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    grid-template-areas: 
+    "vertical horizontal-top"
+    "vertical horizontal-bottom";
+}
+.full-height {
+    grid-area: vertical;
+}
+.half-height-top {
+    grid-area: horizontal-top;
+    border-top-right-radius: 60px;
+}
+.half-height-bottom {
+    grid-area: horizontal-bottom;
+}
+.info-text-wrapper {
+    width: 49%;
+    display: flex;
+}
+.info .text-content {
+    padding-right: 16%;
+}
+.info-background {
+    border-bottom-left-radius: 60px;
+    width: 28%;
+}
+.info-button {
+    width: 200px;
+    border: 2px solid #444444;
+}
+
 .wave{
     position: relative;
   }
@@ -189,11 +241,11 @@ p:not(:last-of-type) {
 }
 .try .try-image-wrapper {
     width: 49%;
+    display: flex;
 }
 .try img {
     border-top-left-radius: 60px;
     width: 100%;
-    height: auto;
 }
 
 .benefits {
@@ -282,6 +334,18 @@ address {
     .arrivals-wrapper {
         justify-content: flex-start;
     }
+    .info-image-wrapper{
+        width: 87.34%;
+        margin: 0 auto;
+    }
+    .info-text-wrapper {
+        width: 100%;
+        padding-left: 6.33%;
+        padding-top: 6.33%;
+    }
+    .info .text-content{
+        padding-right: 6.33%;
+    }
     .try .text-content{
         width: 100%;
         padding-right: 6.33%;
@@ -300,6 +364,9 @@ address {
     .banner {
         padding-top: 285px;
     }
+    .info-image-wrapper{
+        width: 100%;
+    }
     .ordering {
         padding-right: 0;
         justify-content: center;
@@ -309,10 +376,16 @@ address {
     .arrivals {
         width: 100%;
     }
+    img.info-background {
+        display: none;
+    }
 }
 @media only screen and (max-width: 350px) {
     .ordering .text-content {
         width: 100%;
+    }
+    .info-background {
+        display: none;
     }
     .footer-column {
         width: 100%;
