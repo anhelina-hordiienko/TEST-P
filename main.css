@@ -432,8 +432,14 @@ address {
     img.info-background {
         display: none;
     }
+    .ordering .text-content {
+        padding: 6.33%;
+    }
 }
 @media only screen and (max-width: 350px) {
+    .arrivals-cart {
+        bottom: -15px;
+    }
     .ordering .text-content {
         width: 100%;
     }

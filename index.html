@@ -9,9 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
+    <script src="main.js" defer></script>
 </head>
 
-<body>
+<body onload="slideInfo()">
     <header>
         <div class="logo">Site name</div>
         <nav class="navbar">
@@ -63,7 +64,7 @@
                 <img src="./img/jar with drops.png" alt="jar with drops" class="arrivals-image">
                 <p>SeraRelief</p>
                 <div class="rating-block">
-                    <h3>Full Spectrum CBD Oil</h3>
+                    <h3 id="title"></h3>
                     <div class="rating">
                         <img src="./img/green star.png" alt="green star">
                         <img src="./img/green star.png" alt="green star">
@@ -78,13 +79,13 @@
                     </a>
                 </div>
                 <div class="drops-info-block">
-                    <div class="drops-info">30 ML</div>
-                    <div class="drops-info">$28.95</div>
+                    <div class="drops-info" id="volume"></div>
+                    <div class="drops-info" id="price"></div>
                     <div class="drops-info">usa</div>
                     <div class="controls">
-                        <a href="#" class="previous-slide"><img src="./img/left arrow.png" alt="previous slide"></a>
-                        <span class="slide-number">3</span>
-                        <a href="#" class="next-slide"><img src="./img/right arrow.png" alt="next slide"></a>
+                        <a href="#" class="previous-slide"><img src="./img/left arrow.png" alt="previous slide" id="prev"></a>
+                        <span class="slide-number" id="slide-number">3</span>
+                        <a href="#" class="next-slide"><img src="./img/right arrow.png" alt="next slide" id="next"></a>
                     </div>
                 </div>
             </div>
@@ -203,4 +204,4 @@
             &#169; 2019 Playempires. All rights reserved.
         </div>
     </footer>
-</body>
+</body onload="addTitle()" >
