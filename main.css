@@ -145,12 +145,59 @@ p:not(:last-of-type) {
 }
 .arrivals {
     width: 446px;
-    height: 572px;
+    min-height: 572px;
     background-color: #FEFEFE;
     border-radius: 60px;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 6.2% 5%;
+    color: #444444;
+}
+.arrivals-image {
+    align-self: center;
+    margin-bottom: 48px;
+}
+.arrivals p {
+    margin-bottom: 0;
+}
+.rating-block {
+    position: relative;
+    width: 100%;
+}
+.rating {
+    margin-top: 17px;
+}
+.arrivals-cart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.drops-info-block {
+    margin-top: 29px;
+    display: flex;
     align-items: center;
+    width: 100%;
+}
+.drops-info {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.controls {
+    margin-left: auto;
+}
+.slide-number {
+    display: inline-block;
+    margin: 0 12px;
 }
 
 .info {
@@ -206,7 +253,7 @@ p:not(:last-of-type) {
 .wave{
     position: relative;
   }
-  .wave::before{
+.wave::before{
     content: "";
     position: absolute;
     left: 0;
@@ -217,7 +264,7 @@ p:not(:last-of-type) {
     background-size: 20px 20px;
     background-image: radial-gradient(circle at 10px -5px, transparent 12px, #F4F6F7 13px);
   }
-  .wave::after{
+.wave::after{
     content: "";
     position: absolute;
     left: 0;
@@ -377,7 +424,10 @@ address {
 }
 @media only screen and (max-width: 512px) {
     .arrivals {
-        width: 100%;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        margin-left: -50vw;
     }
     img.info-background {
         display: none;
